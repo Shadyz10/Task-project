@@ -1,0 +1,65 @@
+<div class="container">
+    <div class="header">
+        <div class="header-title">
+            <p>Awesome Kanban Board</p>
+        </div>
+        <div class="user-menu">
+            <div class="user-avatar">
+                <!-- <img src="../../img/user-avatar.svg" alt="User Avatar"> -->
+                <span class="arrow">&#9660;</span>
+            </div>
+            <div class="menu-list" id="userMenu">
+                <a href="#">Мой аккаунт</a>
+                <a href="#">Мои задачи</a>
+                <a id="logoutButton" href="#">Выход</a>
+            </div>
+        </div>
+    </div>
+    <div class="kanban-board">
+        <div class="kanban-block" id="backlog">
+            <p>Backlog</p>
+            <div class="task-container" id="backlog-task-container"></div>
+            <div id="new-task"></div>
+            <button class="button add-task" id="add-task-backlog">+ Add card</button>
+        </div>
+        <div class="kanban-block" id="ready">
+            <p>Ready</p>
+            <div class="task-container" id="ready-task-container">
+                <div class="custom-select" id="ready-select-block">
+                    <select class="select-items" id="ready-select"></select>
+                    <div class="select-arrow"></div>
+                </div>
+            </div>
+            <button class="button add-task" id="add-task-ready" disabled>+ Add card</button>
+        </div>
+        <div class="kanban-block" id="inProgress">
+            <p>In progress</p>
+            <div class="task-container" id="in-progress-task-container">
+                <div class="custom-select" id="inProgress-select-block">
+                    <select class="select-items" id="inProgress-select"></select>
+                    <div class="select-arrow"></div>
+                </div>
+            </div>
+            <button class="button add-task" id="add-task-inProgress" disabled>+ Add card</button>
+        </div>
+        <div class="kanban-block" id="finished">
+            <p>Finished</p>
+            <div class="task-container" id="finished-task-container">
+                <div class="custom-select" id="finished-select-block">
+                    <select class="select-items" id="finished-select"></select>
+                    <div class="select-arrow"></div>
+                </div>
+            </div>
+            <button class="button add-task" id="add-task-finished" disabled>+ Add card</button>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-tasks">
+            <p>Active tasks: <span id="active-tasks">0</span></p>
+            <p>Finished tasks: <span id="finished-tasks">0</span></p>
+        </div>
+        <div class="user-tasks">
+            <p>Kanban board by<span id="user-name"> Sergey, </span><span id="user-age">2024</span></p>
+        </div>
+    </div>
+</div>
